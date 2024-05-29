@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fundo {
+  background-color: darkorchid;
+  height: 100vh;
+  overflow: visible;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+#foto{
+  width: 30%;
+  max-width: 155%;
+  height: auto;
+  display:block;
+  border-radius: 50%;
+  box-shadow: 0px 20px 50px #ff4646, 0px -20px 40px #013af5, 20px 0px 40px #ff07fb, -20px 0px 40px #ff07fb;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+#borda-animada{
+  display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px; /* Ajuste o padding conforme necessário */
+      border: 5px solid rgba(255, 253, 255, 0.11);
+      border-radius: 50%;
+      position: absolute;
+      top: 10%; /* Ajuste conforme necessário */
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  min-width: 320px;
+  max-width: 800px;
+  height: 80%;
+  max-height: 100%;
+  border-top: 2px solid #ffffff3a;
+  border-left: 2px solid #ffffff75;
+  box-shadow: 5px 5px 12px #00000035;
+  background: #ffffff25;
+  border-radius: 15px;
+  position: absolute;
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.texto {
+  padding: 0px;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-top: 80px;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #f8f8f8ea;
+}
+
+h2 {
+  padding-top: 10px;
+  font-family: "outfit", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  color: #e4e1e1e0;
+}
+
+/* Correção: Mudança de .buttom para .button */
+section.button {
+  position: absolute;
+  top: 42%;
+  left: 11%;
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+button {
+  width: 250px;
+  max-width: 100%;
+  height: 40px;
+  max-height: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #a73efdfb;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button i {
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #ff07fb;
+}
+
+button:hover,
+button:focus {
+  color: #ffffff;
+  background: rgb(234, 19, 241);
+  border: 1px solid rgb(234, 19, 241);
+  box-shadow: 0 0 5px rgb(234, 19, 241), 0 0 20px rgb(234, 19, 241), 0 0 50px rgb(234, 19, 241), 0 0 100px rgb(234, 19, 241);
+}
+
+.icones {
+  position: absolute;
+  bottom: 50px;
+  width: 103%;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.btn-footer {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  font-size: 24px;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+
+/* Estilo padrão do link */
+a {
+  color: rgb(247, 36, 183); /* Cor padrão do link */
+}
+
+/* Estilo do link quando o mouse está sobre ele */
+a:hover {
+  color: rgb(254, 255, 254); /* Cor do link quando o mouse passa sobre ele */
+}
+
+/* Estilo do link quando é clicado */
+a:active {
+  color: rgb(89, 2, 252); /* Cor do link quando está sendo clicado */
+}
+
+/* Estilo do link visitado */
+a:visited {
+  color: rgba(128, 0, 128, 0.452); /* Cor do link depois de visitado */
+}
+
+footer {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-size: 12px;
+  text-align: center;
+  color: #fdfcfc;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  margin-bottom: 20px;
+}
